@@ -1,10 +1,10 @@
-import React from 'react'
-import "./app.css"
-import Watch from "./pages/watch/watch"
-import Home from "./pages/home/home"
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Register from "./pages/register/register"
+import Watch from "./pages/watch/watch"
 import Login from "./pages/login/login"
+import Home from "./pages/home/home"
+import React from 'react'
+import "./app.css"
 
 const router = createBrowserRouter([
   {
