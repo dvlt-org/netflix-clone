@@ -1,0 +1,41 @@
+.list {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    overflow: hidden;
+}
+
+.list-wrapper__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list-container__arrow {
+    color: red;
+    position: absolute;
+    background-color: gray;
+    margin: auto;
+    height: 150px !important;
+    width: 50px !important;
+}
+
+.list-container__arrow.right {
+    right: -50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.list-container__arrow.left {
+    left: -50px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.list-container__items {
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.5s ease-in-out all;
+}

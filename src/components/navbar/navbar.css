@@ -1,0 +1,94 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    transition: 0.5s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: var(--main-color);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    color: white;
+    padding: 0 50px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left__img {
+    object-fit: cover;
+    height: 25px;
+    margin-right: 40px;
+}
+
+.navbar-left__navigation {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-navigation__item {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar-right__img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.margin-right__icon {
+    cursor: pointer;
+}
+
+.navbar-right__container {
+    display: none;
+}
+
+.navbar-profile__container {
+    display: none;
+}
+
+.navbar-profile__icon {
+    cursor: pointer;
+}
+
+.navbar-right__profile {
+    position: relative;
+}
+
+.navbar-right__profile:hover .navbar-profile__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    background-color: #0b0b0b;
+    left: -10px;
+}
+
+.navbar-profile__title {
+    cursor: pointer;
+}
